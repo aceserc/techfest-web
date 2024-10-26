@@ -13,6 +13,7 @@ type TimeLeft = {
 export const CountdownTimer = ({ targetDate, className }: { targetDate: string, className?: string }) => {
   const [timeLeft, setTimeLeft] = useState<TimeLeft>({ days: 0, hours: 0, minutes: 0, seconds: 0 })
   const [isTimerOver, setIsTimerOver] = useState(false)
+  const [isLoading, setIsLoading] = useState(true)
   useEffect(() => {
     const timer = setInterval(() => {
       const now = new Date().getTime()
@@ -32,7 +33,7 @@ export const CountdownTimer = ({ targetDate, className }: { targetDate: string, 
         setIsTimerOver(true)
       }
     }, 1000)
-
+    setIsLoading(false)
     return () => clearInterval(timer)
   }, [targetDate])
 
@@ -42,7 +43,7 @@ export const CountdownTimer = ({ targetDate, className }: { targetDate: string, 
       {Object.entries(timeLeft).map(([key, value]) => (
         <div key={key} className="flex flex-col items-center ">
           <div className="w-full aspect-square flex items-center justify-center bg-muted/30 border border-border/30 rounded-md mb-2 max-xs:max-h-16">
-            <div className="text-xl xs:text-2xl sm:text-4xl font-bold text-primary">{value.toString().padStart(2, '0')}</div>
+            <div className="text-xl xs:text-2xl sm:text-4xl font-bold text-primary">{isLoading ? ".." : value.toString().padStart(2, '0')}</div>
           </div>
           <div className="text-sm text-muted-foreground capitalize">{key}</div>
         </div>

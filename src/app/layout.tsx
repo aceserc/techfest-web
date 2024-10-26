@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+// import ThemeConfigurator from "@/components/globals/theme-configurator";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="overflow-x-hidden">{children}</body>
+      <body className="overflow-x-hidden scrollbar">{children}
+        {/* <ThemeConfigurator /> */}
+      </body>
     </html>
   );
 }

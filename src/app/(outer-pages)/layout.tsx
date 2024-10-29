@@ -1,3 +1,4 @@
+import Footer from "@/components/globals/footer"
 import { Header } from "@/components/globals/header"
 import { buttonVariants } from "@/components/ui/button"
 import { currentTechfest } from "@/data/techfest"
@@ -12,6 +13,8 @@ const Layout = ({ children }: Props) => {
 
   return (
     <div>
+      {/* bg image */}
+      <div className="fixed inset-0 z-0 bg-center bg-no-repeat bg-cover opacity-[0.03]" style={{ backgroundImage: "url(/assets/images/erc.jpg)" }} />
       <Header
         routes={[
           {
@@ -45,9 +48,11 @@ const Layout = ({ children }: Props) => {
           </Link>
         }
       />
-      <main className="mt-14 overflow-y-auto overflow-x-hidden">
+      <main
+        className="mt-14 overflow-y-auto overflow-x-hidden backdrop-blur-sm min-h-screen">
         {children}
       </main>
+      <Footer />
     </div>
   )
 }

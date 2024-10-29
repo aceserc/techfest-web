@@ -32,7 +32,7 @@ const HeroSection = () => {
 
             <div className="max-w-screen-md mx-auto text-center text-4xl md:text-6xl font-bold">
               <h1>
-                Experience the ACES
+                Unleash Innovation at ACES
                 <span className="gradient-text">
                   Techfest
                 </span>
@@ -41,7 +41,7 @@ const HeroSection = () => {
             </div>
 
             <p className="max-w-screen-sm mx-auto text-xl text-muted-foreground">
-              INNOVATE, CREATE, AND ELEVATE.
+              Get ready for {currentTechfest.label} - where tech enthusiasts compete, create, and connect in events like Hackathons, UI/UX Showdowns, and more. Experience the future of innovation!
             </p>
 
             <div className="space-y-4 md:space-x-4">

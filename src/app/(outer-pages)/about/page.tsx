@@ -11,7 +11,7 @@ import Floating3DModels from "./_components/floating-3d-models"
 
 const AboutPage = async () => {
   return (
-    <div className="space-y-12 container mx-auto my-20 max-md:mb-32 h-full w-full relative">
+    <div className="space-y-12 container mx-auto my-20 max-md:mb-32 overflow-visible relative">
       <div className="text-center mb-8 relative z-10">
         <h2 className="text-lg text-muted-foreground/60 text-center mb-2 tracking-wider">
           Where technology meets creativity
@@ -71,7 +71,7 @@ const AboutPage = async () => {
         <Link
           href={"https://aceserc.org"}
           className={cn(buttonVariants({ variant: "link" }), "w-5/6 md:w-1/4 group/arrow text-muted-foreground")}>
-          Explore about ACES
+          Learn about ACES
           <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
         </Link>
       </div>

@@ -1,4 +1,3 @@
-import Footer from "@/components/globals/footer";
 import AllTechfestSection from "./_components/all-techfests-section";
 import HeroSection from "./_components/hero-section";
 import HighlightSection from "./_components/highlight-section";
@@ -14,7 +13,6 @@ const Page = () => {
       <AllTechfestSection />
       <HighlightSection />
       <WelcomeMessageSection />
-      <Footer />
     </div>
   );
 };

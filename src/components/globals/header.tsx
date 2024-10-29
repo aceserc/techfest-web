@@ -85,7 +85,7 @@ export const Header = ({ routes, rightContent }: Props) => {
             <NavigationMenuItem>
               {routes.map(({ href, label }) => (
                 <NavigationMenuLink key={href} asChild>
-                  <Link href={href} className="text-base px-2">
+                  <Link href={href} className="text-base px-2 hover:underline underline-offset-4">
                     {label}
                   </Link>
                 </NavigationMenuLink>

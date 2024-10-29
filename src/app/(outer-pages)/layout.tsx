@@ -15,20 +15,24 @@ const Layout = ({ children }: Props) => {
       <Header
         routes={[
           {
-            href: "#hero",
+            href: "/#hero",
             label: "Home",
           },
           {
-            href: "#techfest",
+            href: "/#techfest",
             label: "Techfests",
           },
           {
-            href: "#highlights",
+            href: "/#highlights",
             label: "Highlights",
           },
           {
-            href: "#welcome-message",
+            href: "/#welcome-message",
             label: "Welcome Message",
+          },
+          {
+            href: "/events",
+            label: "Events",
           },
         ]}
         rightContent={

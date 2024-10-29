@@ -34,6 +34,10 @@ const Layout = ({ children }: Props) => {
             href: "/events",
             label: "Events",
           },
+          {
+            href: "/about",
+            label: "About",
+          },
         ]}
         rightContent={
           <Link href={currentTechfest.path} className={cn(buttonVariants({ variant: "secondary" }), "min-w-32 group/arrow max-lg:w-full")} >

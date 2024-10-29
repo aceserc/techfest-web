@@ -27,12 +27,12 @@ const HighlightSection = () => {
   return (
     <section id="highlights" className="container py-24 sm:py-32 relative">
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Highlights
+        <h2 className="text-lg text-muted-foreground/60 text-center mb-2 tracking-wider">
+          A journey through time.
         </h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Lorem ipsum dolor sit amet.
+        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4 gradient-text">
+          Highlights from Previous Techfests
         </h2>
       </div>
       <Carousel >

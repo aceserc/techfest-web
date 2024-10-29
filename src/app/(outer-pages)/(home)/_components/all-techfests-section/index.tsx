@@ -31,12 +31,12 @@ const AllTechfestSection = () => {
   return (
     <section id="techfest" className="container py-24 sm:py-32 max-w-4xl relative">
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Techfest
+        <h2 className="text-lg text-muted-foreground/60 text-center mb-2 tracking-wider">
+          Every version, a new milestone.
         </h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Lorem ipsum dolor sit amet.
+        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4 gradient-text">
+          Techfest Evolution: From v1.0 to Now
         </h2>
       </div>
 
@@ -68,7 +68,7 @@ const AllTechfestSection = () => {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis deleniti dolores sint.
+                    Get ready for an unforgettable techfest experience! Connect, learn, and grow as you immerse yourself in the latest trends and technologies.
                   </CardContent>
                 </Card>
               </Link>
@@ -84,9 +84,9 @@ const AllTechfestSection = () => {
                   </AlertDialogTrigger>
                   <AlertDialogContent>
                     <AlertDialogHeader>
-                      <AlertDialogTitle>No Data!</AlertDialogTitle>
+                      <AlertDialogTitle>No Data Available!</AlertDialogTitle>
                       <AlertDialogDescription>
-                        There is no data available for techfest <span className="font-semibold">{`v${version}.0`}</span> but it was far better than your imagination.
+                        Techfest <span className="font-semibold">{`v${version}.0`}</span> was so incredible, words can&apos;t do it justice! Although we don&apos;t have any data to share, we can assure you it surpassed all expectations.
                       </AlertDialogDescription>
                     </AlertDialogHeader>
                     <AlertDialogFooter>

@@ -12,7 +12,7 @@ const PastSponsors = async () => {
   return (
     <section
       id="past-sponsors"
-      className="flex flex-col gap-4 items-center justify-center container mx-auto min-h-16 pb-24 sm:pb-32"
+      className="flex flex-col gap-4 items-center justify-center container mx-auto min-h-16 pb-24"
     >
       <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
         Past Sponsors

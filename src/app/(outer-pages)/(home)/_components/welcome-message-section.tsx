@@ -13,12 +13,12 @@ const WelcomeMessageSection = () => {
   return (
     <section id="welcome-message" className="container py-24 sm:py-32">
       <div className="text-center mb-8">
-        <h2 className="text-lg text-primary text-center mb-2 tracking-wider">
-          Welcome Message
+        <h2 className="text-lg text-muted-foreground/60 text-center mb-2 tracking-wider">
+          Join us in celebration!
         </h2>
 
-        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4">
-          Lorem ipsum dolor sit amet.
+        <h2 className="text-3xl md:text-4xl text-center font-bold mb-4 gradient-text">
+          A Warm Welcome to Our Techfest
         </h2>
       </div>
       <div

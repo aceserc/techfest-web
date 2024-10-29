@@ -10,10 +10,10 @@ const Page = () => {
   return (
     <div className="space-y-12">
       <HeroSection />
+      <PastSponsors />
       <AllTechfestSection />
       <HighlightSection />
       <WelcomeMessageSection />
-      <PastSponsors />
       <Footer />
     </div>
   );

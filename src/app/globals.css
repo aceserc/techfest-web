@@ -74,4 +74,7 @@
   .scrollbar {
     scrollbar-width: 3vw;
   }
+  .gradient-text {
+    @apply text-transparent px-2 bg-gradient-to-r from-ring to-primary bg-clip-text;
+  }
 }

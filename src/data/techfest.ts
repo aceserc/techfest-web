@@ -16,7 +16,7 @@ export type CurrentTechfestStatus = "counting" | "started" | "completed";
 export const techfestData: TechfestData = {
   "v7.0": {
     path: "/v7.0/",
-    startDate: "2025/1/1",
+    startDate: "2024/12/11",
     endDate: "2025/1/2",
   },
 };

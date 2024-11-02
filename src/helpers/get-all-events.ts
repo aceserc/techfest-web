@@ -12,9 +12,12 @@ export type EventData = {
   image: string;
   content: ReactElement;
   category?: string[];
+  desc: string;
 };
 
-export const getAllEvents = async (): Promise<Array<EventData>> => {
+export const getAllEvents = async (
+  id?: string[]
+): Promise<Array<EventData>> => {
   try {
     const fullPath = path.join(process.cwd(), PATH_T0_EVENTS);
     const files = fs
@@ -42,12 +45,16 @@ export const getAllEvents = async (): Promise<Array<EventData>> => {
           id: frontmatter.id,
           content: content,
           category: frontmatter.category,
+          desc: frontmatter.desc,
         };
       })
     );
 
     // sort events by name
-    return events.sort((a, b) => a.title.localeCompare(b.title));
+    const sortedEvents = events.sort((a, b) => a.title.localeCompare(b.title));
+    return !id || id.length === 0
+      ? sortedEvents
+      : sortedEvents.filter((e) => id.includes(e.id));
   } catch (error) {
     console.log(error);
     return [];

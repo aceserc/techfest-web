@@ -1,5 +1,18 @@
 import { PastSponsor } from "./past-sponsors";
 
+export type Event = {
+  startsFrom?: string;
+  eventId: string;
+  endsAt?: string;
+  registration?: {
+    from: string;
+    endsAt: string;
+    link: string;
+  };
+};
+
+export type Events = Array<Event>;
+
 export type TechfestLabel = `v${number}.0`;
 export type TechfestValue = {
   path: string;
@@ -11,6 +24,9 @@ export type TechfestValue = {
     previewVideo: string;
   };
   mediaPartners: PastSponsor[];
+  preEvents?: Events;
+  postEvents?: Events;
+  mainEvents?: Events;
 };
 export type TechfestData = Record<TechfestLabel, TechfestValue>;
 
@@ -52,6 +68,52 @@ export const techfestData: TechfestData = {
         image: "/assets/images/logo/engineer-ko-byatha.png",
         name: "Engineer ko Byatha",
         href: "",
+      },
+    ],
+    preEvents: [
+      {
+        eventId: "ai-art-competition",
+      },
+      {
+        eventId: "brain-storming-quiz",
+      },
+      {
+        eventId: "meme-competition",
+      },
+      {
+        eventId: "webinars",
+      },
+      {
+        eventId: "learning-challenge",
+      },
+      {
+        eventId: "workshop",
+      },
+    ],
+    mainEvents: [
+      {
+        eventId: "hackathon",
+      },
+      {
+        eventId: "intern-fest",
+      },
+      {
+        eventId: "google-maestro",
+      },
+      {
+        eventId: "datathon",
+      },
+      {
+        eventId: "ar-bug-hunt",
+      },
+      {
+        eventId: "game-fest",
+      },
+      {
+        eventId: "capture-the-flag",
+      },
+      {
+        eventId: "ui-ux-competition",
       },
     ],
   },

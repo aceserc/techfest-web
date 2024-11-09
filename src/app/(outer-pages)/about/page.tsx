@@ -6,7 +6,6 @@ import { ArrowRight } from "lucide-react"
 import { Metadata } from "next"
 import Link from "next/link"
 import { Fragment } from "react"
-import Floating3DModels from "./_components/floating-3d-models"
 
 
 const AboutPage = async () => {
@@ -75,7 +74,6 @@ const AboutPage = async () => {
           <ArrowRight className="size-5 ml-2 group-hover/arrow:translate-x-1 transition-transform" />
         </Link>
       </div>
-      <Floating3DModels />
     </div >
   )
 }

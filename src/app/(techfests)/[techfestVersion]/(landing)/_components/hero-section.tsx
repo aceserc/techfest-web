@@ -25,7 +25,7 @@ const HeroSection = ({ techfestVersion, desc, title }: Props) => {
       </div>
       <div className='flex flex-col gap-4'>
         <video
-          src='http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4'
+          src='https://ik.imagekit.io/ej1nrdgis/ACES/ACES.mp4?tr=orig&updatedAt=1731159616125'
           className='w-full h-fit rounded-md cursor-pointer'
           autoPlay
           muted

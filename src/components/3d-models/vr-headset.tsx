@@ -16,7 +16,7 @@ import { useGLTF } from '@react-three/drei'
 const modelPath = "/assets/3d-models/vr-headset/scene.gltf"
 
 export const VRHeadset = (props: GroupProps) => {
-  const { nodes, materials } = useGLTF(modelPath)
+  const { nodes, materials } = useGLTF(modelPath, true)
   return (
     <group {...props} dispose={null}>
       <group name="Sketchfab_Scene">

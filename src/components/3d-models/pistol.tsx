@@ -18,7 +18,7 @@ import { GroupProps, useFrame } from '@react-three/fiber'
 const modelPath = "/assets/3d-models/pistol/scene.gltf"
 
 export const Pistol = (props: GroupProps) => {
-  const { nodes, materials } = useGLTF(modelPath)
+  const { nodes, materials } = useGLTF(modelPath, true)
 
   const pistolRef = useRef();
 

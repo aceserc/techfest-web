@@ -18,7 +18,7 @@ const modelPath = "/assets/3d-models/scifi-monitor/scene.gltf"
 
 export const ScifiMonitor = (props: GroupProps) => {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF(modelPath)
+  const { nodes, materials, animations } = useGLTF(modelPath, true)
   const { actions } = useAnimations(animations, group)
 
 

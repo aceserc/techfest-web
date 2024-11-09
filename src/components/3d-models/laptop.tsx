@@ -16,7 +16,7 @@ import { GroupProps } from '@react-three/fiber'
 const modelPath = "/assets/3d-models/laptop/scene.gltf"
 
 export const Laptop = (props: GroupProps) => {
-  const { nodes, materials } = useGLTF(modelPath)
+  const { nodes, materials } = useGLTF(modelPath, true)
   return (
     <group {...props} dispose={null}>
       <group name="Sketchfab_Scene">

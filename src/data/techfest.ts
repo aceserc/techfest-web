@@ -46,7 +46,7 @@ export const techfestData: TechfestData = {
       desc: "Dive into ACES Techfest v7.0—where ideas spark, skills grow, and the future takes shape. Join the action and redefine innovation!",
       header: "Techfest v7.0: Ignite Your Innovation",
       previewVideo:
-        "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "https://ik.imagekit.io/ej1nrdgis/ACES/ACES.mp4?tr=orig&updatedAt=1731159616125",
     },
     mediaPartners: [
       {

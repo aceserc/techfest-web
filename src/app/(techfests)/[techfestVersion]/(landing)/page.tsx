@@ -17,6 +17,7 @@ const Page = (
         desc={techfestData.landingPage.desc}
         title={techfestData.landingPage.header}
         techfestVersion={techfestVersion}
+        previewVideo={techfestData.landingPage.previewVideo}
       />
       <MarqueeWithHeader
         data={techfestData.mediaPartners}

@@ -8,9 +8,10 @@ type Props = {
   title: string;
   desc: string;
   techfestVersion: string;
+  previewVideo: string
 }
 
-const HeroSection = ({ techfestVersion, desc, title }: Props) => {
+const HeroSection = ({ techfestVersion, desc, title, previewVideo }: Props) => {
   return (
     <section
       className='grid grid-cols-1 lg:grid-cols-[1fr_300px] gap-3 pt-9'
@@ -25,7 +26,7 @@ const HeroSection = ({ techfestVersion, desc, title }: Props) => {
       </div>
       <div className='flex flex-col gap-4'>
         <video
-          src='https://ik.imagekit.io/ej1nrdgis/ACES/ACES.mp4?tr=orig&updatedAt=1731159616125'
+          src={previewVideo}
           className='w-full h-fit rounded-md cursor-pointer'
           autoPlay
           muted

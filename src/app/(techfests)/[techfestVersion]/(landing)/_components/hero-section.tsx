@@ -42,20 +42,20 @@ const HeroSection = ({ techfestVersion, desc, title, previewVideo }: Props) => {
             {
               label: 'Pre Events',
               icon: CircleGaugeIcon,
-              desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, soluta.',
+              desc: 'Get ready with a series of exciting pre-events that build the momentum! From workshops to mini-challenges, kickstart your techfest experience here.',
               href: `/${techfestVersion}/pre-events`,
             },
             {
               label: 'Main Events',
               icon: TargetIcon,
-              desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, soluta.',
+              desc: 'Dive into the main action! Compete, learn, and innovate in our lineup of thrilling competitions and interactive sessions at the heart of ACES Techfest.',
               href: `/${techfestVersion}/main-events`,
 
             },
             {
               label: 'Post Events',
               icon: MilestoneIcon,
-              desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, soluta.',
+              desc: 'Celebrate the journey! Join us for wrap-up sessions, award ceremonies, and networking to mark the end of this incredible techfest.',
               href: `/${techfestVersion}/post-events`,
             }
           ].map(({ label, icon: Icon, desc, href }, i) => (

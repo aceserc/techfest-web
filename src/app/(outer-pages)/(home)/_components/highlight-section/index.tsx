@@ -7,7 +7,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel"
 import { HIGHLIGHT_IMAGES } from "@/data/highlight"
-import Floating3DModels from "./floating-3d-models"
+// import Floating3DModels from "./floating-3d-models"
 
 
 const HighlightSection = () => {
@@ -81,7 +81,7 @@ const HighlightSection = () => {
           <CarouselNext className="static" />
         </div>
       </Carousel>
-      <Floating3DModels />
+      {/* <Floating3DModels /> */}
     </section>
   )
 }

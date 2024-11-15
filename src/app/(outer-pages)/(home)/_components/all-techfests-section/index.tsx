@@ -19,7 +19,7 @@ import {
 import { buttonVariants } from "@/components/ui/button"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
-import Floating3DModels from "./floating-3d-models"
+// import Floating3DModels from "./floating-3d-models"
 
 
 const AllTechfestSection = () => {
@@ -107,7 +107,7 @@ const AllTechfestSection = () => {
           })
         }
       </div>
-      <Floating3DModels />
+      {/* <Floating3DModels /> */}
     </section >
   )
 }

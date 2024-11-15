@@ -46,18 +46,19 @@ const ImageDialog = ({ src, className, height = 1000, width = 1000 }: Props) => 
     };
   }, []);
 
-  
+
 
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Image
           src={src}
-          className={cn("w-full h-full object-cover object-center rounded-lg cursor-pointer", className)}
+          className={cn("w-full h-full object-cover object-center rounded-lg cursor-pointer bg-muted/50 shadow-inner", className)}
           height={height}
           width={width}
           alt=""
           quality={100}
+          fetchPriority="low"
         />
       </DialogTrigger>
       <DialogContent className="p-0 border-none">
@@ -69,6 +70,7 @@ const ImageDialog = ({ src, className, height = 1000, width = 1000 }: Props) => 
           width={width}
           quality={100}
           alt=""
+          fetchPriority="low"
         />
         <FullscreenIcon
           onClick={onFullScreen}

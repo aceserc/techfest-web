@@ -1,14 +1,8 @@
 import { PastSponsor } from "./past-sponsors";
 
 export type Event = {
-  startsFrom?: string;
   eventId: string;
-  endsAt?: string;
-  registration?: {
-    from: string;
-    endsAt: string;
-    link: string;
-  };
+  href?: string;
 };
 
 export type Events = Array<Event>;

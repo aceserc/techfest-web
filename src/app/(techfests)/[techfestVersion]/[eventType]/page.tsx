@@ -43,15 +43,10 @@ const Page = async ({ params: { eventType, techfestVersion } }: { params: { even
                       </span>
                       <h3 className="flex items-center mb-1 text-xl sm:text-3xl md:text-4xl font-semibold text-foreground">
                         {e.event?.title}
-                        <Badge className="ms-3" variant={"secondary"}>
+                        <Badge className="ms-3 max-sm:hidden" variant={"secondary"}>
                           {eventType.substring(0, eventType.length - 1)}
                         </Badge>
                       </h3>
-                      <time className="block mb-2 text-sm font-normal leading-none text-muted-foreground">
-                        {
-                          e.startsFrom ? `Starts From ${new Date(e.startsFrom).toLocaleDateString()}` : "Date not fixed yet!"
-                        }
-                      </time>
                       <p className="mb-4 text-base font-normal text-foreground/80">
                         {e.event?.desc}
                       </p>
@@ -68,16 +63,16 @@ const Page = async ({ params: { eventType, techfestVersion } }: { params: { even
                     className="flex items-center gap-3"
                   >
                     <Link
-                      href={e.registration?.link ?? ""}
+                      href={e.href ?? ""}
                       target="_blank"
                       className={buttonVariants({
                         variant: "secondary",
                         size: "sm",
-                        className: !e.registration?.link && "opacity-60 pointer-events-none"
+                        className: !e.href && "opacity-60 pointer-events-none"
                       })}
 
                     >
-                      Register Now <ArrowRightIcon className="ml-2.5 size-4" />
+                      Participate <ArrowRightIcon className="ml-2.5 size-4" />
                     </Link>
                   </div>
                 </li>

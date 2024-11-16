@@ -67,6 +67,7 @@ export const techfestData: TechfestData = {
     preEvents: [
       {
         eventId: "ai-art-competition",
+        href: "https://www.facebook.com/share/p/186iP9hQCW/",
       },
       {
         eventId: "brain-storming-quiz",

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { buttonVariants } from "@/components/ui/button"
 import { TechfestLabel } from "@/data/techfest"
 import { getTechfestDataWithEvents } from "@/helpers/get-techfest-data-with-events"
+import { sendGAEvent } from "@next/third-parties/google"
 import { ArrowRightIcon, Calendar } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
@@ -63,6 +64,12 @@ const Page = async ({ params: { eventType, techfestVersion } }: { params: { even
                     className="flex items-center gap-3"
                   >
                     <Link
+                      onClick={() => {
+                        sendGAEvent({
+                          event: "click",
+                          page_path: `/techfests/${techfestVersion}/${eventType}/${e.event}`,
+                        })
+                      }}
                       href={e.href ?? ""}
                       target="_blank"
                       className={buttonVariants({

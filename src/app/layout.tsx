@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { currentTechfest } from "@/data/techfest";
 import TopLoader from "@/components/loaders/top-loader";
+import { GoogleAnalytics } from "@next/third-parties/google";
+import PageViews from "@/components/ga/page-views";
 
 export default function RootLayout({
   children,
@@ -13,6 +15,10 @@ export default function RootLayout({
       <body className="overflow-x-hidden scrollbar">
         {children}
         <TopLoader />
+        <GoogleAnalytics
+          gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID as string}
+        />
+        <PageViews />
       </body>
     </html>
   );

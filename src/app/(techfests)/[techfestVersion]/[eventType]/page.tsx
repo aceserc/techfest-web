@@ -1,12 +1,10 @@
 import Error404 from "@/components/blocks/404"
 import { Badge } from "@/components/ui/badge"
-import { buttonVariants } from "@/components/ui/button"
 import { TechfestLabel } from "@/data/techfest"
 import { getTechfestDataWithEvents } from "@/helpers/get-techfest-data-with-events"
-import { sendGAEvent } from "@next/third-parties/google"
-import { ArrowRightIcon, Calendar } from "lucide-react"
+import { Calendar } from "lucide-react"
 import Image from "next/image"
-import Link from "next/link"
+import Link from "./_components/link"
 
 const EVENT_TYPES = ["pre-events", "post-events", "main-events"]
 
@@ -64,23 +62,12 @@ const Page = async ({ params: { eventType, techfestVersion } }: { params: { even
                     className="flex items-center gap-3"
                   >
                     <Link
-                      onClick={() => {
-                        sendGAEvent({
-                          event: "click",
-                          page_path: `/techfests/${techfestVersion}/${eventType}/${e.event}`,
-                        })
-                      }}
-                      href={e.href ?? ""}
-                      target="_blank"
-                      className={buttonVariants({
-                        variant: "secondary",
-                        size: "sm",
-                        className: !e.href && "opacity-60 pointer-events-none"
-                      })}
+                      event={e.eventId}
+                      eventType={eventType}
+                      href={e.href!}
+                      techfestVersion={techfestVersion}
+                    />
 
-                    >
-                      Participate <ArrowRightIcon className="ml-2.5 size-4" />
-                    </Link>
                   </div>
                 </li>
               ))}

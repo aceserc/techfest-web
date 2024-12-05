@@ -75,6 +75,7 @@ export const techfestData: TechfestData = {
       },
       {
         eventId: "brain-storming-quiz",
+        href: "https://www.facebook.com/share/p/1HNnWe8URv/",
       },
       {
         eventId: "meme-competition",
@@ -89,6 +90,7 @@ export const techfestData: TechfestData = {
     mainEvents: [
       {
         eventId: "hackathon",
+        href: "https://www.facebook.com/share/p/1D4KLCig4G/",
       },
       {
         eventId: "intern-fest",

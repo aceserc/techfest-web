@@ -78,9 +78,6 @@ export const techfestData: TechfestData = {
         href: "https://www.facebook.com/share/p/1HNnWe8URv/",
       },
       {
-        eventId: "meme-competition",
-      },
-      {
         eventId: "webinars",
       },
       {
@@ -94,24 +91,27 @@ export const techfestData: TechfestData = {
       },
       {
         eventId: "intern-fest",
+        href: "https://www.facebook.com/share/p/15deRVAuWK/",
       },
       {
         eventId: "google-maestro",
+        href: "https://www.facebook.com/share/1AqhLAEyDJ/",
       },
       {
         eventId: "datathon",
+        href: "https://www.facebook.com/share/15ft4PqbeV/",
       },
       {
         eventId: "ar-bug-hunt",
-      },
-      {
-        eventId: "game-fest",
+        href: "https://www.facebook.com/share/15fDxeStim/",
       },
       {
         eventId: "capture-the-flag",
+        href: "https://www.facebook.com/share/19hCLvGiwX/",
       },
       {
         eventId: "ui-ux-competition",
+        href: "https://www.facebook.com/share/p/1GkYfSaMtB/",
       },
     ],
   },

@@ -87,7 +87,7 @@ export const techfestData: TechfestData = {
     mainEvents: [
       {
         eventId: "hackathon",
-        href: "https://www.facebook.com/share/p/1D4KLCig4G/",
+        href: "https://www.facebook.com/share/19Wd8emPbY/",
       },
       {
         eventId: "intern-fest",
@@ -111,7 +111,7 @@ export const techfestData: TechfestData = {
       },
       {
         eventId: "ui-ux-competition",
-        href: "https://www.facebook.com/share/p/1GkYfSaMtB/",
+        href: "https://www.facebook.com/share/1E4Gd9DGWW/",
       },
     ],
   },

@@ -63,6 +63,16 @@ export const techfestData: TechfestData = {
         name: "Engineer ko Byatha",
         href: "",
       },
+      {
+        image: "/assets/images/logo/hamropatro.png",
+        name: "Hamro Patro",
+        href: "https://www.hamropatro.com/",
+      },
+      {
+        image: "/assets/images/logo/dharan buzz.png",
+        name: "Dharan Buzz",
+        href: "",
+      },
     ],
     preEvents: [
       {

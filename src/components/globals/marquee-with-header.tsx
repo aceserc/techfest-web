@@ -1,14 +1,11 @@
+import { Partner } from "@/data/techfest";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Marquee from "react-fast-marquee";
 
 type Props = {
-  data: {
-    image: string;
-    name: string;
-    href: string;
-  }[];
+  data: Partner[];
   id?: string
   title: string
 };
@@ -21,7 +18,7 @@ const MarqueeWithHeader = async ({ data, title, id }: Props) => {
   return (
     <section
       id={id}
-      className="flex flex-col gap-4 items-center justify-center container mx-auto min-h-16 pb-24"
+      className="flex flex-col gap-4 items-center justify-center container mx-auto min-h-16"
     >
       <h2 className="text-lg text-muted-foreground/60 text-center mb-2 tracking-wider">
         {title}
@@ -35,10 +32,10 @@ const MarqueeWithHeader = async ({ data, title, id }: Props) => {
           {data.map((sponsor, i) => (
             <Link href={sponsor.href ?? "#"} key={i} target="_blank" className={!sponsor.href ? "pointer-events-none" : ""}>
               <Image
-                src={sponsor.image}
+                src={sponsor.logo}
                 alt={sponsor.name}
                 title={sponsor.name}
-                className="mr-9 md:mr-10 object-contain object-center h-10 md:h-12 rounded-md bg-muted/40 py-1.5 px-2.5 w-fit bg-blend-lighten"
+                className="mr-9 md:mr-10 object-contain object-center h-10 md:h-11 rounded-md bg-muted/40 py-1.5 px-2.5 w-fit bg-blend-lighten"
                 fetchPriority="low"
                 loading="lazy"
                 height={600}

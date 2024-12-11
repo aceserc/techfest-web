@@ -24,7 +24,7 @@ const HeroSection = ({ techfestVersion, desc, title, previewVideo, titleSponsor 
         {
           titleSponsor && (
             <div
-              className='flex gap-2 items-center w-fit ml-2.5 mb-0.5'
+              className='flex gap-2 items-center w-fit ml-2.5 mb-0.5 opacity-60'
             >
               <Link
                 href={titleSponsor.href ?? '#'}
